@@ -1,0 +1,33 @@
+name: pytorch
+description: A flutter plugin for pytorch model inference. Supports image models as well as custom models.
+version: 0.1.0+1
+publish_to: none
+
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+  flutter: ">=3.3.1"
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        default_package: pytorch_android
+      ios:
+        default_package: pytorch_ios
+
+dependencies:
+  flutter:
+    sdk: flutter
+  pytorch_android:
+    path: ../pytorch_android
+  pytorch_ios:
+    path: ../pytorch_ios
+  pytorch_platform_interface:
+    path: ../pytorch_platform_interface
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  mocktail: ^0.3.0
+  plugin_platform_interface: ^2.1.3
+  very_good_analysis: ^3.1.0
