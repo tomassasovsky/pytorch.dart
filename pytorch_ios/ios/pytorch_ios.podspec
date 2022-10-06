@@ -3,7 +3,7 @@
 # Run `pod lib lint pytorch.podspec' to validate before publishing.
 #
 Pod::Spec.new do |s|
-  s.name             = 'pytorch'
+  s.name             = 'pytorch_ios'
   s.version          = '0.0.1'
   s.summary          = 'A flutter plugin for pytorch model inference. Supports image models as well as custom models.'
   s.description      = <<-DESC
