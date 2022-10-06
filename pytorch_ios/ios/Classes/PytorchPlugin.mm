@@ -1,10 +1,3 @@
-// Copyright (c) 2022, Sports Visio, Inc
-// https://sportsvisio.com
-//
-// Use of this source code is governed by an MIT-style
-// license that can be found in the LICENSE file or at
-// https://opensource.org/licenses/MIT.
-
 #import "PytorchPlugin.h"
 #import "TorchModule.h"
 #import "UIImageExtension.h"
@@ -12,17 +5,14 @@
 
 @implementation PytorchPlugin
 
-+ (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar> *)registrar {
-  FlutterMethodChannel *channel =
-      [FlutterMethodChannel methodChannelWithName:@"pytorch_ios"
-                                  binaryMessenger:registrar.messenger];
-  [channel setMethodCallHandler:^(FlutterMethodCall *call, FlutterResult result) {
-    if ([@"getPlatformName" isEqualToString:call.method]) {
-      result(@"iOS");
-    } else {
-      result(FlutterMethodNotImplemented);
-    }
-  }];
+NSMutableArray *modules = [[NSMutableArray alloc] init];
+
++ (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar>*)registrar {
+    FlutterMethodChannel* channel = [FlutterMethodChannel
+                                     methodChannelWithName:@"pytorch_ios"
+                                     binaryMessenger:[registrar messenger]];
+    PytorchPlugin* instance = [[PytorchPlugin alloc] init];
+    [registrar addMethodCallDelegate:instance channel:channel];
 }
 
 - (void)handleMethodCall:(FlutterMethodCall*)call result:(FlutterResult)result {

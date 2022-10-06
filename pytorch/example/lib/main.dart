@@ -69,7 +69,7 @@ class _MyAppState extends State<MyApp> {
       customModel,
       224,
       224,
-      'assets/labels/label_classification_imageNet.txt',
+      'assets/labels/label_classification.txt',
     );
 
     setState(() {
