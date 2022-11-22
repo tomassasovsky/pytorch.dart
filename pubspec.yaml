@@ -9,6 +9,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  matrix2d: ^1.0.3
+  numdart: ^1.0.0
+  opencv_4: ^1.0.0
+  scidart: ^0.0.2-dev.12
 
 dev_dependencies:
   mocktail: ^0.3.0
