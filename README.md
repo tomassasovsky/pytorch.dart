@@ -63,7 +63,7 @@ open coverage/index.html
 [very_good_analysis_badge]: https://img.shields.io/badge/style-very_good_analysis-B22C89.svg
 [very_good_analysis_link]: https://pub.dev/packages/very_good_analysis
 [very_good_coverage_link]: https://github.com/marketplace/actions/very-good-coverage
-[very_good_ventures_link]: https://verygood.ventures
-[very_good_ventures_link_light]: https://verygood.ventures#gh-light-mode-only
-[very_good_ventures_link_dark]: https://verygood.ventures#gh-dark-mode-only
+[very_good_ventures_link]: https://sportsvisio.com
+[very_good_ventures_link_light]: https://sportsvisio.com#gh-light-mode-only
+[very_good_ventures_link_dark]: https://sportsvisio.com#gh-dark-mode-only
 [very_good_workflows_link]: https://github.com/VeryGoodOpenSource/very_good_workflows
