@@ -7,6 +7,7 @@ environment:
   sdk: ">=2.18.0 <3.0.0"
 
 dependencies:
+  ffmpeg_kit_flutter: ^5.1.0
   flutter:
     sdk: flutter
   matrix2d: ^1.0.3
